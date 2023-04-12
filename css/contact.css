@@ -1,0 +1,226 @@
+.box-contact {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.box-contact .wrap-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.box-contact .wrap-contact .title-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-contact .wrap-contact .title-contact h1 {
+    color: #474d4b;
+    font-size: 39.998px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 43.9978px;
+    margin: 0px 0px 30px;
+    text-align: center;
+}
+
+.box-contact .wrap-contact .title-contact p {
+    color: #1f2933;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 25px;
+    margin: 0px 0px 12px;
+    text-align: center;
+}
+
+.box-contact .wrap-contact .info-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 0px;
+}
+
+.box-contact .wrap-contact .info-contact .card-info-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-contact .wrap-contact .info-contact .card-info-contact .phone-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    margin: 0px 0px 30px 0px;
+    background: #58626c;
+    width: 100%;
+    border: 5px solid #dedede;
+}
+
+.box-contact .wrap-contact .info-contact .card-info-contact .phone-contact i {
+    color: #fff;
+    font-size: 30px;
+    margin: 0px 20px 0px 0px;
+}
+
+.box-contact .wrap-contact .info-contact .card-info-contact .phone-contact span {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.box-contact .wrap-contact .info-contact .card-info-contact .text-info-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box-contact .wrap-contact .info-contact .card-info-contact .text-info-card h3 {
+    color: #474d4b;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27px;
+    margin: 0px 0px 15px 0px;
+    text-align: left;
+}
+
+.box-contact .wrap-contact .info-contact .card-info-contact .text-info-card p {
+    color: #1f2933;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0px 0px 12px;
+    text-align: left;
+}
+
+.box-contact .wrap-contact .how-contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 0px;
+}
+
+.box-contact .wrap-contact .how-contact .form-contact {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fafafa;
+    border: 10px solid #dedede;
+    padding: 50px 30px;
+}
+
+.box-contact .wrap-contact .how-contact .form-contact .input {
+    width: 100%;
+    display: flex;
+}
+
+.box-contact .wrap-contact .how-contact .form-contact .input label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #474d4b;
+    letter-spacing: 0.8px;
+    text-align: right;
+    width: 30%;
+    margin: 25px 10px 0px 0px;
+}
+
+.box-contact .wrap-contact .how-contact .form-contact .input input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #a9a9a9;
+    padding: 10px 5px 5px 5px;
+    outline: none;
+    font-size: 16px;
+    width: 60%;
+}
+
+.box-contact .wrap-contact .how-contact .form-contact .input textarea {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #dedede;
+    padding: 10px 5px 5px 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.box-contact .wrap-contact .how-contact .form-contact button {
+    padding: 10px;
+    border: 1px solid #dedede;
+    background: transparent;
+    width: 60%;
+    margin: 0px 0px 0px 125px;
+    color: #474d4b;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.25s linear;
+}
+
+.box-contact .wrap-contact .how-contact .form-contact button:hover {
+    color: #ADA075;
+    transition: all 0.25s linear;
+    background-color: #fff;
+}
+
+.box-contact .wrap-contact .how-contact .add-contact {
+    width: 50%;
+    height: 680px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box-contact .wrap-contact .how-contact .add-contact iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Reponsive */
+
+@media (max-width: 1250px) {
+    .box-contact .wrap-contact {
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .box-contact .wrap-contact .info-contact {
+        flex-wrap: wrap;
+    }
+
+    .box-contact .wrap-contact .how-contact {
+        flex-wrap: wrap;
+    }
+
+    .box-contact .wrap-contact .how-contact .form-contact {
+        width: 100%;
+    }
+
+    .box-contact .wrap-contact .how-contact .add-contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .box-contact .wrap-contact .how-contact .add-contact {
+        height: 450px;
+    }
+}

@@ -1,0 +1,209 @@
+/* Change grid-col */
+
+.box-change {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.change-col {
+    opacity: 0.5;
+}
+
+.change-col.change {
+    opacity: 1;
+    color: #B0A377;
+}
+
+.box {
+    display: none !important;
+}
+
+.box.change {
+    display: grid !important;
+}
+
+.change-col {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 15px;
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.change-col i {
+    font-size: 35px;
+}
+
+/* Style section search tour */
+
+.box-list {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px;
+    height: auto;
+    background-color: #fafafa;
+    transition: all 0.3s linear;
+}
+
+.box-list .btn-list {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.box-list .btn-list.active~.box-search-tour {
+    display: grid;
+    opacity: 1;
+    overflow: auto;
+    visibility: visible;
+    transform: rotateX(0deg);
+}
+
+.box-list .btn-list i {
+    font-size: 35px;
+    color: #474b4d;
+}
+
+.box-search-tour {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+
+.box-search-tour .select-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-search-tour .select-item select {
+    display: none;
+}
+
+.box-search-tour .select-item .select-selected {
+    background-color: #B0A377;
+    padding: 10px;
+    width: 150px;
+    overflow: auto;
+}
+
+.box-search-tour .select-item .select-selected::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 10px;
+    width: 0%;
+    height: 0%;
+    border: 6px solid transparent;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #0cc938 transparent;
+    top: 0px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: #B0A377;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* Reponsive */
+
+@media (max-width: 1250px) {
+    .box-search-tour {
+        grid-template-columns: auto auto auto auto auto;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .box-search-tour {
+        grid-template-columns: auto auto auto auto;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .box-list {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        height: 0;
+        background-color: #fafafa;
+        transition: all 0.3s linear;
+    }
+
+    .box-list.active {
+        height: 55vh;
+        transition: all 0.3s linear;
+    }
+
+    .box-list .btn-list {
+        display: flex;
+    }
+
+    .box-search-tour {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto;
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        visibility: hidden;
+        opacity: 0;
+        backface-visibility: hidden;
+        transform: rotateX(-100deg);
+        transform-style: preserve-3d;
+        transform-origin: top;
+        transition: transform 0.5s cubic-bezier(0.2, 0.37, 0.6, 1.2);
+        gap: 15px;
+    }
+
+    .box-search-tour .select-item .select-selected {
+        background-color: #B0A377;
+        padding: 10px;
+        width: 90vw;
+    }
+}

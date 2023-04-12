@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/change-listing.css">
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css"
+            rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+        <title>World-Entrada Default</title>
+    </head>
+
+    <body>
+
+        <!-- layout-page -->
+        <div w3-include-html="navbar.html"></div>
+
+        <!-- Section home -->
+        <section class="box-banner">
+            <img src="./image/bg-home2.jpg" alt="">
+            <div class="filter-bg"></div>
+            <div class="wrap title-banner">
+                <h1>Popular Destinations</h1>
+                <span>Popular Destinations around the World</span>
+                <div class="back-page">
+                    <a href="./index.html">Home</a>
+                    <a href="#">Listings</a>
+                    <a href="./listing.html">Grid view - 3 col</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- section grid-3 col -->
+
+        <div class="box-list" id="box-list">
+            <div class="btn-list" id="btn-list">
+                <i class="fa-regular fa-rectangle-list"></i>
+            </div>
+
+            <!-- section search-tour -->
+            <div class="wrap box-search-tour">
+                <div class="select-item">
+                    <select name="find-adventures">
+                        <option value="" class="hideme">Holiday Type</option>
+                        <option value="1">All Holiday Types</option>
+                        <option value="2">Camping</option>
+                        <option value="3">Childeren</option>
+                        <option value="4">Culture</option>
+                        <option value="5">Cycling</option>
+                        <option value="6">Discovery</option>
+                        <option value="7">Family</option>
+                        <option value="8">History</option>
+                        <option value="9">Jungle</option>
+                        <option value="10">Cycling</option>
+                        <option value="11">Wildlife</option>
+                    </select>
+
+                </div>
+
+                <div class="select-item">
+                    <select name="find-adventures">
+                        <option value="" class="hideme">Destination</option>
+                        <option value="1">All Destination</option>
+                        <optgroup label="Asia">
+                            <option value="Asia">Asia</option>
+                            <option value="China3">China</option>
+                            <option value="India">India</option>
+                            <option value="Nepal">Nepal</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="europe">europe</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Spain">Spain</option>
+                            <option value="United Kingdom ">United Kingdom</option>
+                        </optgroup>
+                        <optgroup label="World">
+                            <option value="world">world</option>
+                            <option value="Australia ">Australia</option>
+                            <option value="Canada ">Canada</option>
+                            <option value="New Zealand ">New Zealand</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="select-item">
+                    <select name="find-adventures">
+                        <option value="">Difficulty</option>
+                        <option value="">All Difficulties</option>
+                        <option value="leisurely">Leisurely</option>
+                        <option value="fairly-easy">Fairly Easy</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="strenuous">Strenuous</option>
+                        <option value="challenging">Challenging</option>
+                        <option value="tough">Tough</option>
+                        <option value="extreme">Extreme</option>
+                        <option value="ultimate">Ultimate</option>
+                    </select>
+                </div>
+
+                <div class="select-item">
+                    <select name="find-adventures">
+                        <option value="sort">Sort Order</option>
+                        <option value="alphabet">Alphabet</option>
+                        <option value="price">Price</option>
+                        <option value="popularity">Popular</option>
+                        <option value="date">Recent</option>
+                    </select>
+                </div>
+
+                <div class="select-item">
+                    <select name="find-adventures">
+                        <option value="">Price Range</option>
+                        <option value="">All Price Range</option>
+                        <option value="0-500">0 - 500</option>
+                        <option value="501-1000">501 - 1000</option>
+                        <option value="1001-1500">1001 - 1500</option>
+                        <option value="1501-2000">1501 - 2000</option>
+                        <option value="2001-3000">2001 - 3000</option>
+                        <option value="3001-5000">3001 - 5000</option>
+                        <option value="5001-10000">5001 - 10000</option>
+                    </select>
+                </div>
+
+                <div class="box-change">
+                    <div class="change-col change" id="change-col-3">
+                        <i class="fa-solid fa-grip"></i>
+                    </div>
+
+                    <div class="change-col " id="change-col">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- section sale  -->
+
+
+        <section class="box box-seller change">
+            <div class="wrap-seller">
+                <div class="title-seller">
+                    <h1>Best seller of 2023</h1>
+                    <p>Our collection of the most popular adventures in 2023</p>
+                </div>
+                <div class="content-seller">
+                    <div class="card-seller">
+                        <div class="photo-seller">
+                            <img src="./image/bg-home1.jpg" alt="">
+                            <div class="time-seller">Sale</div>
+                        </div>
+                        <div class="infor-seller">
+                            <div class="infor-1">
+                                <div class="infor-title">
+                                    <h1>Boating and Sailing Tour</h1>
+                                </div>
+                                <div class="infor-add">
+                                    <a href="">City Tours,</a>
+                                    <a href="">Urban</a>
+                                </div>
+                                <div class="infor-place">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                    <span>10 Place</span>
+                                    <i class="fa-brands fa-creative-commons-sampling"></i>
+                                    <span>2 Activities</span>
+                                </div>
+                            </div>
+                            <div class="infor-2">
+                                <p>Son agreed others exeter period myself few yet nature. Mention mr manners opinion if
+                                    garrets enabled. To an occasional
+                                    dissimilar impossible sentiments.</p>
+                                <a href="./detail-tour.html">
+                                    <button class="hvr-sweep-to-right">Explore</button>
+                                </a>
+                            </div>
+                            <div class="price-seller">
+                                <div class="price">
+                                    <h3>from <br> <span>$1,599</span></h3>
+                                </div>
+                                <div class="icon-link">
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-seller">
+                        <div class="photo-seller">
+                            <img src="./image/bg-home1.jpg" alt="">
+                            <div class="time-seller">Sale</div>
+                        </div>
+                        <div class="infor-seller">
+                            <div class="infor-1">
+                                <div class="infor-title">
+                                    <h1>Boating and Sailing Tour</h1>
+                                </div>
+                                <div class="infor-add">
+                                    <a href="">City Tours,</a>
+                                    <a href="">Urban</a>
+                                </div>
+                                <div class="infor-place">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                    <span>10 Place</span>
+                                    <i class="fa-brands fa-creative-commons-sampling"></i>
+                                    <span>2 Activities</span>
+                                </div>
+                            </div>
+                            <div class="infor-2">
+                                <p>Son agreed others exeter period myself few yet nature. Mention mr manners opinion if
+                                    garrets enabled. To an occasional
+                                    dissimilar impossible sentiments.</p>
+                                <a href="./detail-tour.html">
+                                    <button class="hvr-sweep-to-right">Explore</button>
+                                </a>
+                            </div>
+                            <div class="price-seller">
+                                <div class="price">
+                                    <h3>from <br> <span>$1,599</span></h3>
+                                </div>
+                                <div class="icon-link">
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-seller">
+                        <div class="photo-seller">
+                            <img src="./image/bg-home1.jpg" alt="">
+                            <div class="time-seller">Sale</div>
+                        </div>
+                        <div class="infor-seller">
+                            <div class="infor-1">
+                                <div class="infor-title">
+                                    <h1>Boating and Sailing Tour</h1>
+                                </div>
+                                <div class="infor-add">
+                                    <a href="">City Tours,</a>
+                                    <a href="">Urban</a>
+                                </div>
+                                <div class="infor-place">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                    <span>10 Place</span>
+                                    <i class="fa-brands fa-creative-commons-sampling"></i>
+                                    <span>2 Activities</span>
+                                </div>
+                            </div>
+                            <div class="infor-2">
+                                <p>Son agreed others exeter period myself few yet nature. Mention mr manners opinion if
+                                    garrets enabled. To an occasional
+                                    dissimilar impossible sentiments.</p>
+                                <a href="./detail-tour.html">
+                                    <button class="hvr-sweep-to-right">Explore</button>
+                                </a>
+                            </div>
+                            <div class="price-seller">
+                                <div class="price">
+                                    <h3>from <br> <span class="discount-price">$799</span> <span>$599</span></h3>
+                                </div>
+                                <div class="icon-link">
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-seller">
+                        <div class="photo-seller">
+                            <img src="./image/bg-home1.jpg" alt="">
+                            <div class="time-seller">Sale</div>
+                        </div>
+                        <div class="infor-seller">
+                            <div class="infor-1">
+                                <div class="infor-title">
+                                    <h1>Boating and Sailing Tour</h1>
+                                </div>
+                                <div class="infor-add">
+                                    <a href="">City Tours,</a>
+                                    <a href="">Urban</a>
+                                </div>
+                                <div class="infor-place">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                    <span>10 Place</span>
+                                    <i class="fa-brands fa-creative-commons-sampling"></i>
+                                    <span>2 Activities</span>
+                                </div>
+                            </div>
+                            <div class="infor-2">
+                                <p>Son agreed others exeter period myself few yet nature. Mention mr manners opinion if
+                                    garrets enabled. To an occasional
+                                    dissimilar impossible sentiments.</p>
+                                <a href="./detail-tour.html">
+                                    <button class="hvr-sweep-to-right">Explore</button>
+                                </a>
+                            </div>
+                            <div class="price-seller">
+                                <div class="price">
+                                    <h3>from <br> <span class="discount-price">$999</span> <span>$799</span></h3>
+                                </div>
+                                <div class="icon-link">
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-seller">
+                        <div class="photo-seller">
+                            <img src="./image/bg-home1.jpg" alt="">
+                            <div class="time-seller">Sale</div>
+                        </div>
+                        <div class="infor-seller">
+                            <div class="infor-1">
+                                <div class="infor-title">
+                                    <h1>Boating and Sailing Tour</h1>
+                                </div>
+                                <div class="infor-add">
+                                    <a href="">City Tours,</a>
+                                    <a href="">Urban</a>
+                                </div>
+                                <div class="infor-place">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                    <span>10 Place</span>
+                                    <i class="fa-brands fa-creative-commons-sampling"></i>
+                                    <span>2 Activities</span>
+                                </div>
+                            </div>
+                            <div class="infor-2">
+                                <p>Son agreed others exeter period myself few yet nature. Mention mr manners opinion if
+                                    garrets enabled. To an occasional
+                                    dissimilar impossible sentiments.</p>
+                                <a href="./detail-tour.html">
+                                    <button class="hvr-sweep-to-right">Explore</button>
+                                </a>
+                            </div>
+                            <div class="price-seller">
+                                <div class="price">
+                                    <h3>from <br> <span>$1,599</span></h3>
+                                </div>
+                                <div class="icon-link">
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-seller">
+                        <div class="photo-seller">
+                            <img src="./image/bg-home1.jpg" alt="">
+                            <div class="time-seller">Sale</div>
+                        </div>
+                        <div class="infor-seller">
+                            <div class="infor-1">
+                                <div class="infor-title">
+                                    <h1>Boating and Sailing Tour</h1>
+                                </div>
+                                <div class="infor-add">
+                                    <a href="">City Tours,</a>
+                                    <a href="">Urban</a>
+                                </div>
+                                <div class="infor-place">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                    <span>10 Place</span>
+                                    <i class="fa-brands fa-creative-commons-sampling"></i>
+                                    <span>2 Activities</span>
+                                </div>
+                            </div>
+                            <div class="infor-2">
+                                <p>Son agreed others exeter period myself few yet nature. Mention mr manners opinion if
+                                    garrets enabled. To an occasional
+                                    dissimilar impossible sentiments.</p>
+                                <a href="./detail-tour.html">
+                                    <button class="hvr-sweep-to-right">Explore</button>
+                                </a>
+                            </div>
+                            <div class="price-seller">
+                                <div class="price">
+                                    <h3>from <br> <span>$1,599</span></h3>
+                                </div>
+                                <div class="icon-link">
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-seller">
+                        <div class="photo-seller">
+                            <img src="./image/bg-home1.jpg" alt="">
+                            <div class="time-seller">Sale</div>
+                        </div>
+                        <div class="infor-seller">
+                            <div class="infor-1">
+                                <div class="infor-title">
+                                    <h1>Boating and Sailing Tour</h1>
+                                </div>
+                                <div class="infor-add">
+                                    <a href="">City Tours,</a>
+                                    <a href="">Urban</a>
+                                </div>
+                                <div class="infor-place">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                    <span>10 Place</span>
+                                    <i class="fa-brands fa-creative-commons-sampling"></i>
+                                    <span>2 Activities</span>
+                                </div>
+                            </div>
+                            <div class="infor-2">
+                                <p>Son agreed others exeter period myself few yet nature. Mention mr manners opinion if
+                                    garrets enabled. To an occasional
+                                    dissimilar impossible sentiments.</p>
+                                <a href="./detail-tour.html">
+                                    <button class="hvr-sweep-to-right">Explore</button>
+                                </a>
+                            </div>
+                            <div class="price-seller">
+                                <div class="price">
+                                    <h3>from <br> <span>$1,599</span></h3>
+                                </div>
+                                <div class="icon-link">
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-seller">
+                        <div class="photo-seller">
+                            <img src="./image/bg-home1.jpg" alt="">
+                            <div class="time-seller">Sale</div>
+                        </div>
+                        <div class="infor-seller">
+                            <div class="infor-1">
+                                <div class="infor-title">
+                                    <h1>Boating and Sailing Tour</h1>
+                                </div>
+                                <div class="infor-add">
+                                    <a href="">City Tours,</a>
+                                    <a href="">Urban</a>
+                                </div>
+                                <div class="infor-place">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                    <span>10 Place</span>
+                                    <i class="fa-brands fa-creative-commons-sampling"></i>
+                                    <span>2 Activities</span>
+                                </div>
+                            </div>
+                            <div class="infor-2">
+                                <p>Son agreed others exeter period myself few yet nature. Mention mr manners opinion if
+                                    garrets enabled. To an occasional
+                                    dissimilar impossible sentiments.</p>
+                                <a href="./detail-tour.html">
+                                    <button class="hvr-sweep-to-right">Explore</button>
+                                </a>
+                            </div>
+                            <div class="price-seller">
+                                <div class="price">
+                                    <h3>from <br> <span>$1,599</span></h3>
+                                </div>
+                                <div class="icon-link">
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section grid- 1 column -->
+
+        <section class="box box-word-tour">
+            <div class="wrap wrap-word-tour">
+                <div class="title-word-tour">
+                    <h1>World Tours</h1>
+                    <p>Trending Destinations Around The World</p>
+                </div>
+                <div class="list-tour">
+                    <div class="card-word-tour">
+                        <div class="img-card">
+                            <img src="./image/bg-home2.jpg" alt="">
+                            <div class="time-seller">Sale</div>
+                        </div>
+                        <div class="wrap-content">
+                            <div class="content-card">
+                                <div class="title-card">
+                                    <h1>
+                                        <a href="">Boating and Sailing Tour</a>
+                                        <span>11 Days</span>
+                                    </h1>
+                                    <p>Son agreed others exeter period myself few yet nature. Mention mr manners opinion
+                                        if
+                                        garrets enabled. To an occasional
+                                        dissimilar impossible sentiments.
+                                    </p>
+                                    <div class="star-tour">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>Based on <span>999</span> Review</p>
+                                    </div>
+                                    <div class="cta-tour">
+                                        <div class="activities-tour">
+                                            <i class="fa-solid fa-person-walking">
+                                                <span>Hiking</span>
+                                            </i>
+                                            <i class='bx bxs-tree'>
+                                                <span>Jungle</span>
+                                            </i>
+                                            <i class="fa-solid fa-city">
+                                                <span>Ha Noi</span>
+                                            </i>
+                                            <i class="fa-solid fa-person-biking">
+                                                <span>Biking</span>
+                                            </i>
+                                            <i class="fa-solid fa-crosshairs">
+                                                <span>Hunting</span>
+                                            </i>
+                                        </div>
+                                        <div class="btn-share">
+                                            <i class="fa-solid fa-share-nodes share">
+                                                <ul>
+                                                    <li>
+                                                        <a href="">
+                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                            <span>Share</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            <i class="fa-brands fa-twitter"></i>
+                                                            <span>Tweet</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </i>
+                                            <i id="btn-heart" class="fa-solid fa-heart heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="explore-card">
+                                <span>from</span>
+                                <h2 class="price-old">$1,599</h2>
+                                <h2 class="price-new">$1,199</h2>
+                                <i class='bx bx-tachometer'></i>
+                                <a href="./detail-tour.html">
+                                    <button class="hvr-sweep-to-right">Explore</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-word-tour">
+                        <div class="img-card">
+                            <img src="./image/bg-home2.jpg" alt="">
+                            <div class="time-seller">Sale</div>
+                        </div>
+                        <div class="wrap-content">
+                            <div class="content-card">
+                                <div class="title-card">
+                                    <h1>
+                                        <a href="">Boating and Sailing Tour</a>
+                                        <span>11 Days</span>
+                                    </h1>
+                                    <p>Son agreed others exeter period myself few yet nature. Mention mr manners opinion
+                                        if
+                                        garrets enabled. To an occasional
+                                        dissimilar impossible sentiments.
+                                    </p>
+                                    <div class="star-tour">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>Based on <span>999</span> Review</p>
+                                    </div>
+                                    <div class="cta-tour">
+                                        <div class="activities-tour">
+                                            <i class="fa-solid fa-person-walking">
+                                                <span>Hiking</span>
+                                            </i>
+                                            <i class='bx bxs-tree'>
+                                                <span>Jungle</span>
+                                            </i>
+                                            <i class="fa-solid fa-city">
+                                                <span>Ha Noi</span>
+                                            </i>
+                                            <i class="fa-solid fa-person-biking">
+                                                <span>Biking</span>
+                                            </i>
+                                            <i class="fa-solid fa-crosshairs">
+                                                <span>Hunting</span>
+                                            </i>
+                                        </div>
+                                        <div class="btn-share">
+                                            <i class="fa-solid fa-share-nodes share">
+                                                <ul>
+                                                    <li>
+                                                        <a href="">
+                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                            <span>Share</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            <i class="fa-brands fa-twitter"></i>
+                                                            <span>Tweet</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </i>
+                                            <i id="btn-heart" class="fa-solid fa-heart heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="explore-card">
+                                <span>from</span>
+                                <h2 class="price-old">$1,599</h2>
+                                <h2 class="price-new">$1,199</h2>
+                                <i class='bx bx-tachometer'></i>
+                                <a href="./detail-tour.html">
+                                    <button class="hvr-sweep-to-right">Explore</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-word-tour">
+                        <div class="img-card">
+                            <img src="./image/bg-home2.jpg" alt="">
+                            <div class="time-seller">Sale</div>
+                        </div>
+                        <div class="wrap-content">
+                            <div class="content-card">
+                                <div class="title-card">
+                                    <h1>
+                                        <a href="">Boating and Sailing Tour</a>
+                                        <span>11 Days</span>
+                                    </h1>
+                                    <p>Son agreed others exeter period myself few yet nature. Mention mr manners opinion
+                                        if
+                                        garrets enabled. To an occasional
+                                        dissimilar impossible sentiments.
+                                    </p>
+                                    <div class="star-tour">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>Based on <span>999</span> Review</p>
+                                    </div>
+                                    <div class="cta-tour">
+                                        <div class="activities-tour">
+                                            <i class="fa-solid fa-person-walking">
+                                                <span>Hiking</span>
+                                            </i>
+                                            <i class='bx bxs-tree'>
+                                                <span>Jungle</span>
+                                            </i>
+                                            <i class="fa-solid fa-city">
+                                                <span>Ha Noi</span>
+                                            </i>
+                                            <i class="fa-solid fa-person-biking">
+                                                <span>Biking</span>
+                                            </i>
+                                            <i class="fa-solid fa-crosshairs">
+                                                <span>Hunting</span>
+                                            </i>
+                                        </div>
+                                        <div class="btn-share">
+                                            <i class="fa-solid fa-share-nodes share">
+                                                <ul>
+                                                    <li>
+                                                        <a href="">
+                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                            <span>Share</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            <i class="fa-brands fa-twitter"></i>
+                                                            <span>Tweet</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </i>
+                                            <i id="btn-heart" class="fa-solid fa-heart heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="explore-card">
+                                <span>from</span>
+                                <h2 class="price-old">$1,599</h2>
+                                <h2 class="price-new">$1,199</h2>
+                                <i class='bx bx-tachometer'></i>
+                                <a href="./detail-tour.html">
+                                    <button class="hvr-sweep-to-right">Explore</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-word-tour">
+                        <div class="img-card">
+                            <img src="./image/bg-home2.jpg" alt="">
+                        </div>
+                        <div class="wrap-content">
+                            <div class="content-card">
+                                <div class="title-card">
+                                    <h1>
+                                        <a href="">Boating and Sailing Tour</a>
+                                        <span>11 Days</span>
+                                    </h1>
+                                    <p>Son agreed others exeter period myself few yet nature. Mention mr manners opinion
+                                        if
+                                        garrets enabled. To an occasional
+                                        dissimilar impossible sentiments.
+                                    </p>
+                                    <div class="star-tour">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>Based on <span>999</span> Review</p>
+                                    </div>
+                                    <div class="cta-tour">
+                                        <div class="activities-tour">
+                                            <i class="fa-solid fa-person-walking">
+                                                <span>Hiking</span>
+                                            </i>
+                                            <i class='bx bxs-tree'>
+                                                <span>Jungle</span>
+                                            </i>
+                                            <i class="fa-solid fa-city">
+                                                <span>Ha Noi</span>
+                                            </i>
+                                            <i class="fa-solid fa-person-biking">
+                                                <span>Biking</span>
+                                            </i>
+                                            <i class="fa-solid fa-crosshairs">
+                                                <span>Hunting</span>
+                                            </i>
+                                        </div>
+                                        <div class="btn-share">
+                                            <i class="fa-solid fa-share-nodes share">
+                                                <ul>
+                                                    <li>
+                                                        <a href="">
+                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                            <span>Share</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            <i class="fa-brands fa-twitter"></i>
+                                                            <span>Tweet</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </i>
+                                            <i id="btn-heart" class="fa-solid fa-heart heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="explore-card">
+                                <span>from</span>
+                                <!-- <h2 class="price-old">$1,599</h2> -->
+                                <h2 class="price-new">$1,199</h2>
+                                <i class='bx bx-tachometer'></i>
+                                <a href="./detail-tour.html">
+                                    <button class="hvr-sweep-to-right">Explore</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-word-tour">
+                        <div class="img-card">
+                            <img src="./image/bg-home2.jpg" alt="">
+                            <div class="time-seller">Sale</div>
+                        </div>
+                        <div class="wrap-content">
+                            <div class="content-card">
+                                <div class="title-card">
+                                    <h1>
+                                        <a href="">Boating and Sailing Tour</a>
+                                        <span>11 Days</span>
+                                    </h1>
+                                    <p>Son agreed others exeter period myself few yet nature. Mention mr manners opinion
+                                        if
+                                        garrets enabled. To an occasional
+                                        dissimilar impossible sentiments.
+                                    </p>
+                                    <div class="star-tour">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>Based on <span>999</span> Review</p>
+                                    </div>
+                                    <div class="cta-tour">
+                                        <div class="activities-tour">
+                                            <i class="fa-solid fa-person-walking">
+                                                <span>Hiking</span>
+                                            </i>
+                                            <i class='bx bxs-tree'>
+                                                <span>Jungle</span>
+                                            </i>
+                                            <i class="fa-solid fa-city">
+                                                <span>Ha Noi</span>
+                                            </i>
+                                            <i class="fa-solid fa-person-biking">
+                                                <span>Biking</span>
+                                            </i>
+                                            <i class="fa-solid fa-crosshairs">
+                                                <span>Hunting</span>
+                                            </i>
+                                        </div>
+                                        <div class="btn-share">
+                                            <i class="fa-solid fa-share-nodes share">
+                                                <ul>
+                                                    <li>
+                                                        <a href="">
+                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                            <span>Share</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            <i class="fa-brands fa-twitter"></i>
+                                                            <span>Tweet</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </i>
+                                            <i id="btn-heart" class="fa-solid fa-heart heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="explore-card">
+                                <span>from</span>
+                                <h2 class="price-old">$1,599</h2>
+                                <h2 class="price-new">$1,199</h2>
+                                <i class='bx bx-tachometer'></i>
+                                <a href="./detail-tour.html">
+                                    <button class="hvr-sweep-to-right">Explore</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-word-tour">
+                        <div class="img-card">
+                            <img src="./image/bg-home2.jpg" alt="">
+                        </div>
+                        <div class="wrap-content">
+                            <div class="content-card">
+                                <div class="title-card">
+                                    <h1>
+                                        <a href="">Boating and Sailing Tour</a>
+                                        <span>11 Days</span>
+                                    </h1>
+                                    <p>Son agreed others exeter period myself few yet nature. Mention mr manners opinion
+                                        if
+                                        garrets enabled. To an occasional
+                                        dissimilar impossible sentiments.
+                                    </p>
+                                    <div class="star-tour">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>Based on <span>999</span> Review</p>
+                                    </div>
+                                    <div class="cta-tour">
+                                        <div class="activities-tour">
+                                            <i class="fa-solid fa-person-walking">
+                                                <span>Hiking</span>
+                                            </i>
+                                            <i class='bx bxs-tree'>
+                                                <span>Jungle</span>
+                                            </i>
+                                            <i class="fa-solid fa-city">
+                                                <span>Ha Noi</span>
+                                            </i>
+                                            <i class="fa-solid fa-person-biking">
+                                                <span>Biking</span>
+                                            </i>
+                                            <i class="fa-solid fa-crosshairs">
+                                                <span>Hunting</span>
+                                            </i>
+                                        </div>
+                                        <div class="btn-share">
+                                            <i class="fa-solid fa-share-nodes share">
+                                                <ul>
+                                                    <li>
+                                                        <a href="">
+                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                            <span>Share</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            <i class="fa-brands fa-twitter"></i>
+                                                            <span>Tweet</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </i>
+                                            <i id="btn-heart" class="fa-solid fa-heart heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="explore-card">
+                                <span>from</span>
+                                <!-- <h2 class="price-old">$1,599</h2> -->
+                                <h2 class="price-new">$1,199</h2>
+                                <i class='bx bx-tachometer'></i>
+                                <a href="./detail-tour.html">
+                                    <button class="hvr-sweep-to-right">Explore</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section Recently Viewed -->
+
+        <section class="box-recently-viewed">
+            <h1>Recently Viewed</h1>
+            <div class="wrap wrap-recently-viewed">
+                <div class="card-recently-viewed">
+                    <div class="title-card-viewed">
+                        <a href="">
+                            <h1>City Tours around Europe</h1>
+                        </a>
+                        <span>
+                            <a href="">City Tours,</a>
+                            <a href="">Iconic,</a>
+                            <a href="">Urban</a>
+                        </span>
+                    </div>
+                    <div class="img-card-viewed">
+                        <img src="./image/bg-home2.jpg" alt="">
+                        <div class="time-seller">Sale</div>
+                    </div>
+                    <div class="activities-card-viewed">
+                        <div class="activities-tour">
+                            <i class="fa-solid fa-person-walking">
+                                <span>Hiking</span>
+                            </i>
+                            <i class='bx bxs-tree'>
+                                <span>Jungle</span>
+                            </i>
+                            <i class="fa-solid fa-city">
+                                <span>Ha Noi</span>
+                            </i>
+                            <i class="fa-solid fa-person-biking">
+                                <span>Biking</span>
+                            </i>
+                        </div>
+                        <div class="infor-card-viewed">
+                            <span>11 Days</span>
+                            <div class="price-card-viewed">
+                                <h2 class="price-old">$599</h2>
+                                <h2 class="price-new">$499</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-recently-viewed">
+                    <div class="title-card-viewed">
+                        <a href="">
+                            <h1>City Tours around Europe</h1>
+                        </a>
+                        <span>
+                            <a href="">City Tours,</a>
+                            <a href="">Iconic,</a>
+                            <a href="">Urban</a>
+                        </span>
+                    </div>
+                    <div class="img-card-viewed">
+                        <img src="./image/bg-home2.jpg" alt="">
+                    </div>
+                    <div class="activities-card-viewed">
+                        <div class="activities-tour">
+                            <i class="fa-solid fa-person-walking">
+                                <span>Hiking</span>
+                            </i>
+                            <i class='bx bxs-tree'>
+                                <span>Jungle</span>
+                            </i>
+                            <i class="fa-solid fa-city">
+                                <span>Ha Noi</span>
+                            </i>
+                            <i class="fa-solid fa-person-biking">
+                                <span>Biking</span>
+                            </i>
+                        </div>
+                        <div class="infor-card-viewed">
+                            <span>11 Days</span>
+                            <div class="price-card-viewed">
+                                <h2 class="price-new">$499</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-recently-viewed">
+                    <div class="title-card-viewed">
+                        <a href="">
+                            <h1>City Tours around Europe</h1>
+                        </a>
+                        <span>
+                            <a href="">City Tours,</a>
+                            <a href="">Iconic,</a>
+                            <a href="">Urban</a>
+                        </span>
+                    </div>
+                    <div class="img-card-viewed">
+                        <img src="./image/bg-home2.jpg" alt="">
+                    </div>
+                    <div class="activities-card-viewed">
+                        <div class="activities-tour">
+                            <i class="fa-solid fa-person-walking">
+                                <span>Hiking</span>
+                            </i>
+                            <i class='bx bxs-tree'>
+                                <span>Jungle</span>
+                            </i>
+                            <i class="fa-solid fa-city">
+                                <span>Ha Noi</span>
+                            </i>
+                            <i class="fa-solid fa-person-biking">
+                                <span>Biking</span>
+                            </i>
+                        </div>
+                        <div class="infor-card-viewed">
+                            <span>11 Days</span>
+                            <div class="price-card-viewed">
+                                <h2 class="price-new">$499</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <div w3-include-html="footer.html"></div>
+
+        <!-- script  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+            </script>
+
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./app.js"></script>
+        <script src="./w3-include-js.js"></script>
+        <script src="./show-list.js"></script>
+
+    </body>
+
+</html>

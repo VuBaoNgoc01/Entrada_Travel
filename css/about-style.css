@@ -1,0 +1,673 @@
+/* Styling section about-us */
+
+.box-about-company {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.box-about-company .wrap-about-company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-about-company .wrap-about-company .title-about-company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0px 15px 0px;
+}
+
+.box-about-company .wrap-about-company .title-about-company h1 {
+    color: #474d4b;
+    font-size: 39.998px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 43.9978px;
+    margin: 0px 0px 12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.box-about-company .wrap-about-company .title-about-company p {
+    color: #1f2933;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 25px;
+    margin: 0px 0px 12px;
+    text-align: center;
+}
+
+.box-about-company .wrap-about-company .content-about-company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+}
+
+.box-about-company .wrap-about-company .content-about-company .card-about-company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.box-about-company .wrap-about-company .content-about-company .card-about-company .img-card-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    margin: 0px 0px 30px 0px;
+}
+
+.box-about-company .wrap-about-company .content-about-company .card-about-company .img-card-about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-about-company .wrap-about-company .content-about-company .card-about-company h3 {
+    color: #474d4b;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27px;
+    margin: 0px 0px 15px 0px;
+    text-align: center;
+}
+
+.box-about-company .wrap-about-company .content-about-company .card-about-company p {
+    color: #1f2933;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0px 0px 15px 0px;
+    text-align: center;
+}
+
+
+/* Styling section about-entrada */
+
+.box-about-entrada {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    background-color: #fafafa;
+}
+
+.box-about-entrada .wrap-about-entrada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-about-entrada .wrap-about-entrada .title-about-entrada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0px 15px 0px;
+}
+
+.box-about-entrada .wrap-about-entrada .title-about-entrada h1 {
+    color: #474d4b;
+    font-size: 39.998px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 43.9978px;
+    margin: 0px 0px 12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.box-about-entrada .wrap-about-entrada .title-about-entrada p {
+    color: #1f2933;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 25px;
+    margin: 0px 0px 12px;
+    text-align: center;
+}
+
+.box-about-entrada .wrap-about-entrada .content-about-entrada {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+    gap: 30px;
+}
+
+.box-about-entrada .wrap-about-entrada .content-about-entrada .content-left h3,
+.box-about-entrada .wrap-about-entrada .content-about-entrada .content-right h3 {
+    color: #474d4b;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27px;
+    margin: 0px 0px 15px 0px;
+    text-align: left;
+}
+
+.box-about-entrada .wrap-about-entrada .content-about-entrada .content-left p,
+.box-about-entrada .wrap-about-entrada .content-about-entrada .content-right p {
+    color: #1f2933;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0px 0px 12px;
+    text-align: left;
+}
+
+/* Styling section service */
+
+.box-service-company {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-service-company .box-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-service-company .box-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-service-company>.filter-bg {
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.box-service-company .wrap-service-company {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    padding: 50px 0px;
+}
+
+.box-service-company .wrap-service-company .card-service-company {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.box-service-company .wrap-service-company .card-service-company i {
+    color: #fff;
+    font-size: 30px;
+    margin: 0px 0px 30px 0px;
+    transition: all 0.3s linear;
+}
+
+.box-service-company .wrap-service-company .card-service-company a {
+    color: #fff;
+    font-size: 16px;
+    margin: 0px 0px 15px 0px;
+    transition: all 0.3s linear;
+}
+
+.box-service-company .wrap-service-company .card-service-company:hover :is(i, a) {
+    color: #ADA075;
+    transition: all 0.3s linear;
+}
+
+
+.box-service-company .wrap-service-company .card-service-company p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0px 0px 12px;
+    text-align: left;
+}
+
+/* Styling section about-entrada */
+
+.box-achieve {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    background-color: #fafafa;
+}
+
+.box-achieve .wrap-achieve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-achieve .wrap-achieve .title-achieve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0px 15px 0px;
+}
+
+.box-achieve .wrap-achieve .title-achieve h1 {
+    color: #474d4b;
+    font-size: 39.998px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 43.9978px;
+    margin: 0px 0px 12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.box-achieve .wrap-achieve .title-achievep {
+    color: #1f2933;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 25px;
+    margin: 0px 0px 12px;
+    text-align: center;
+}
+
+.box-achieve .wrap-achieve .content-achieve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 0px;
+    gap: 30px;
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-left,
+.box-achieve .wrap-achieve .content-achieve .content-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-left h3 {
+    color: #474d4b;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27px;
+    margin: 0px 0px 15px 0px;
+    text-align: left;
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-left p {
+    color: #1f2933;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0px 0px 12px;
+    text-align: left;
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-right {
+    padding: 30px;
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-right .power {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-right .power span {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-right .power .power-line {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    height: 20px;
+    background-color: #474d4b;
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-right .power .power-line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    background: #ADA075;
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-right .power .power-line::after {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 50px;
+    left: 0;
+    top: -40px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    background: #474d4b;
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-right .power .gliding::before {
+    width: 90%;
+    animation: line1 2s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-right .power .gliding::after {
+    content: "90%";
+    left: 90%;
+    animation: num1 2s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-right .power .diving::before {
+    width: 70%;
+    animation: line2 2s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-right .power .diving::after {
+    content: "70%";
+    left: 70%;
+    animation: num2 2s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-right .power .jumping::before {
+    width: 85%;
+    animation: line3 2s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-right .power .jumping::after {
+    content: "85%";
+    left: 85%;
+    animation: num3 2s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-right .power .climbing::before {
+    width: 93%;
+    animation: line4 2s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box-achieve .wrap-achieve .content-achieve .content-right .power .climbing::after {
+    content: "93%";
+    left: 93%;
+    animation: num4 2s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes line1 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes line2 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes line3 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes line4 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 93%;
+    }
+}
+
+@keyframes num1 {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 90%;
+    }
+}
+
+@keyframes num2 {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 70%;
+    }
+}
+
+@keyframes num3 {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 85%;
+    }
+}
+
+@keyframes num4 {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 93%;
+    }
+}
+
+/* Styling section slogan */
+
+.box-slogan {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.box-slogan .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+.box-slogan .bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-slogan .wrap-slogan {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+.box-slogan .wrap-slogan .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.box-slogan .wrap-slogan .slogan h1 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.box-slogan .wrap-slogan .slogan h1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 5px;
+    background-color: #fff;
+    margin: 0px 0px 0px 30px;
+}
+
+/* Styling about-more-entrada */
+
+.box-more-entrada {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.box-service-company .wrap-more-entrada {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    padding: 50px 0px;
+}
+
+.box-service-company .wrap-more-entrada .card-service-company {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.box-service-company .wrap-more-entrada .card-service-company i {
+    color: #1f2933;
+    font-size: 30px;
+    margin: 0px 0px 30px 0px;
+    transition: all 0.3s linear;
+}
+
+.box-service-company .wrap-more-entrada .card-service-company a {
+    color: #1f2933;
+    font-size: 16px;
+    margin: 0px 0px 15px 0px;
+    transition: all 0.3s linear;
+}
+
+.box-service-company .wrap-more-entrada .card-service-company:hover :is(i, a) {
+    color: #ADA075;
+    transition: all 0.3s linear;
+}
+
+
+.box-service-company .wrap-more-entrada .card-service-company p {
+    color: #1f2933;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0px 0px 12px;
+    text-align: left;
+}
+
+
+/* Reponsive */
+
+@media (max-width: 1250px) {
+    .box-service-company .wrap-service-company {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width: 850px) {
+    .box-about-entrada .wrap-about-entrada .content-about-entrada {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .box-about-company .wrap-about-company .content-about-company {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0px;
+    }
+
+    .box-service-company .wrap-service-company {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 30px;
+        padding: 50px 30px;
+    }
+
+    .box-achieve .wrap-achieve .content-achieve {
+        flex-direction: column;
+    }
+
+    .box-achieve .wrap-achieve .content-achieve .content-left,
+    .box-achieve .wrap-achieve .content-achieve .content-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

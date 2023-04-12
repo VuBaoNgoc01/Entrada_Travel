@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/change-listing.css">
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+        <link rel="stylesheet" href="./fonts/fontawesome-free-6.3.0-web/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css"
+            integrity="sha512-hoGlO+71fSG6lgS60I4bKvsFVB+bAnrVFDYlwSXoyNLppDcoupwJB7KbWq/63iACKn3gcgK9jMXd+T+YDeVrGQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;0,700;0,900;1,500&display=swap"
+            rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Slider -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <!-- Hover -->
+        <link rel="stylesheet" href="./css/Hover-master/css/hover-min.css">
+        <!-- import tempalet -->
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <title>Home-icon+search</title>
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+
+        <nav class="box-navbar" id="box-navbar">
+            <!-- <img src="./image/bg-home1.jpg" class="bg-home" alt=""> -->
+            <div class="wrap-navbar">
+                <div class="box-logo">
+                    <a href="./index.html"><img src="./image/logo-entrada.png" alt=""></a>
+                </div>
+                <div class="box-menu" id="box-menu">
+                    <div class="wrap-menu">
+                        <ul class="menu">
+                            <li class="drop-child">
+                                <a href="./index.html">Home</a>
+                                <!-- <ul class="dropdown">
+                                            <li><a href="">Home-Default</a></li>
+                                            <li><a href="./index.html">Home-Icon Search</a></li>
+                                            <li><a href="">Home-Tour Search</a></li>
+                                            <li><a href="">Home-Tour Focus</a></li>
+                                            <li><a href="">Home-Video BG</a></li>
+                                        </ul> -->
+                            </li>
+                            <li class="drop-child">
+                                <a href="#">Destination</a>
+                                <ul class="dropdown">
+                                    <div class="dropdown-left">
+                                        <li id="hover">World
+                                            <ul class="item-right show">
+                                                <li><a href="./destination.html">All World</a></li>
+                                                <li><a href="">Australia</a></li>
+                                                <li><a href="">Canada</a></li>
+                                                <li><a href="">New Zealand</a></li>
+                                                <li><a href="">North America</a></li>
+                                                <li><a href="">Turkey</a></li>
+                                            </ul>
+                                        </li>
+                                        <li id="hover">Europe
+                                            <ul class="item-right hidden ">
+                                                <li><a href="">All Europe</a></li>
+                                                <li><a href="">France</a></li>
+                                                <li><a href="">Germany</a></li>
+                                                <li><a href="">Greece</a></li>
+                                                <li><a href="">Netherlands</a></li>
+                                                <li><a href="">Italy</a></li>
+                                                <li><a href="">Spain</a></li>
+                                                <li><a href="">United Kingdom</a></li>
+                                            </ul>
+                                        </li>
+                                        <li id="hover">Asia
+                                            <ul class="item-right hidden">
+                                                <li><a href="">All Asia</a></li>
+                                                <li><a href="">China</a></li>
+                                                <li><a href="">India</a></li>
+                                                <li><a href="">Nepal</a></li>
+                                            </ul>
+                                        </li>
+                                        <li id="hover">Afria
+                                            <ul class="item-right hidden">
+                                                <li><a href="">All Africa</a></li>
+                                                <li><a href="">Ethiopia</a></li>
+                                                <li><a href="">Tanzania</a></li>
+                                            </ul>
+                                        </li>
+                                    </div>
+                                </ul>
+                                <div class="nav-arrow">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </li>
+                            <li class="drop-child">
+                                <a href="./listing.html">Listings</a>
+                                <!-- <ul class="dropdown">
+                                            <li><a href="./listing.html">Grid-3 Column</a></li>
+                                            <li><a href="">Grid-Left Sidebar</a></li>
+                                            <li><a href="">Grid-Right Sidebar</a></li>
+                                            <li><a href="">Grid-Wide View</a></li>
+                                            <li><a href="">Grid-2 Column</a></li>
+                                            <li><a href="">Grid-4 Column</a></li>
+                                            <li><a href="">List View-Default</a></li>
+                                            <li><a href="">List-Left Sidebar</a></li>
+                                            <li><a href="">List-Right Sidebar</a></li>
+                                        </ul> -->
+                            </li>
+                            <li class="drop-child">
+                                <a href="#">Activities</a>
+                                <ul class="dropdown drop-acti">
+                                    <li>
+                                        <a href="./destination.html">
+                                            <div class="drop-acti-img">
+                                                <img src="./image/bg-home5.jpg" alt="">
+                                            </div>
+                                            <div class="drop-acti-text">
+                                                <h1>City Tours</h1>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna
+                                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                                    laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                                    aute irure dolor…</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="drop-acti-img">
+                                                <img src="./image/bg-home2.jpg" alt="">
+                                            </div>
+                                            <div class="drop-acti-text">
+                                                <h1>City Tours</h1>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna
+                                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                                    laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                                    aute irure dolor…</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="drop-acti-img">
+                                                <img src="./image/bg-home3.jpg" alt="">
+                                            </div>
+                                            <div class="drop-acti-text">
+                                                <h1>City Tours</h1>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna
+                                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                                    laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                                    aute irure dolor…</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="drop-acti-img">
+                                                <img src="./image/bg-home4.jpg" alt="">
+                                            </div>
+                                            <div class="drop-acti-text">
+                                                <h1>City Tours</h1>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna
+                                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                                    laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                                    aute irure dolor…</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="nav-arrow">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </li>
+                            <li class="drop-child">
+                                <a href="./about.html">Pages</a>
+                                <ul class="dropdown drop-page">
+                                    <li>
+                                        <span>General</span>
+                                        <ul class="drop-page-child">
+                                            <li>
+                                                <a href="./about.html">
+                                                    About Us
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    Contact Us
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    404 Error
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    Tour Detail
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- <li>
+                                                <span>Layout</span>
+                                                <ul class="drop-page-child">
+                                                    <li>
+                                                        <a href="">
+                                                            Layout - Full Width
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            Layout - Left Sidebar
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            Layout - Left Sidebar
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            Full Width Wide
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span>Booking</span>
+                                                <ul class="drop-page-child">
+                                                    <li>
+                                                        <a href="">
+                                                            User Account
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            User Cart
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            Checkout
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            My Account
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span>Booking Options</span>
+                                                <ul class="drop-page-child">
+                                                    <li>
+                                                        <a href="">
+                                                            Dates & Prices
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            Affiliate Tours
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            Price Only
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            Tour Addons
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span>Miscellaneous</span>
+                                                <ul class="drop-page-child">
+                                                    <li>
+                                                        <a href="">
+                                                            Icon Fonts
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            Header - Centered
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            Header - Topbar
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li> -->
+                                </ul>
+                                <div class="nav-arrow">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </li class="drop-child">
+                            <li class="drop-child">
+                                <a href="./shop.html">Shop</a>
+                            </li>
+                            <li class="drop-child">
+                                <a href="./blog.html">Blog</a>
+                                <!-- <ul class="dropdown">
+                                            <li><a href="./blog.html">Blog Default</a></li>
+                                            <li><a href="">Left Sidebar Blog</a></li>
+                                            <li><a href="">Right Sidebar Blog</a></li>
+                                            <li><a href="">Full Width Blog</a></li>
+                                            <li><a href="">Blog Single</a></li>
+                                        </ul> -->
+                            </li>
+                            <li class="drop-child">
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-cta">
+                        <div class="cta cta-user">
+                            <a href="./user-acc.html"><i class="fa-solid fa-circle-user"></i></a>
+                        </div>
+                        <div class="cta cta-cart">
+                            <a href="">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </div>
+                        <div class="cta cta-search">
+                            <a href="">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="menu-child">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </button>
+            </div>
+        </nav>
+
+
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+            </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"
+            integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./app.js"></script>
+        <script src="./w3-include-js.js"></script>
+        <script src="./show-list.js"></script>
+
+
+    </body>
+
+</html>
