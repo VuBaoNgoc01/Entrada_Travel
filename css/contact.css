@@ -153,6 +153,7 @@
     background-color: transparent;
     border-bottom: 1px solid #dedede;
     padding: 10px 5px 5px 5px;
+    width: 60%;
     outline: none;
     font-size: 16px;
 }
@@ -222,5 +223,37 @@
 @media (max-width: 768px) {
     .box-contact .wrap-contact .how-contact .add-contact {
         height: 450px;
+    }
+
+    .box-contact .wrap-contact .title-contact h1 {
+        font-size: 28px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        margin: 0px 0px 10px;
+    }
+
+    .box-contact .wrap-contact .title-contact p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .box-contact .wrap-contact .info-contact .card-info-contact .phone-contact {
+        padding: 15px 10px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .box-contact .wrap-contact .info-contact .card-info-contact .phone-contact i {
+        font-size: 20px;
+        margin: 0px 10px 0px 0px;
+    }
+
+    .box-contact .wrap-contact .info-contact .card-info-contact .phone-contact span {
+        font-size: 20px;
+    }
+
+    .box-contact .wrap-contact .info-contact .card-info-contact .text-info-card h3 {
+        font-size: 20px;
+        line-height: 20px;
+        margin: 0px 0px 10px 0px;
     }
 }

@@ -297,7 +297,7 @@
      display: flex;
      align-items: center;
      justify-content: center;
-     padding: 5px;
+     padding: 12px;
      border-right: 1px solid #dedede;
  }
 
@@ -869,6 +869,10 @@
          margin: 0px 0px 20px;
      }
 
+     .box-word-tour .wrap-word-tour .list-tour .card-word-tour {
+         padding: 0;
+     }
+
      .box-word-tour .wrap-word-tour .list-tour .card-word-tour .explore-card .price-new {
          font-size: 28px;
          font-weight: 600;
@@ -890,23 +894,23 @@
 
      .box-word-tour .wrap-word-tour .list-tour .card-word-tour .content-card .title-card h1>span {
          color: #474d4b;
-         font-size: 16px;
+         font-size: 14px;
          font-weight: 700;
          line-height: 18px;
      }
 
      .box-word-tour .wrap-word-tour .list-tour .card-word-tour .content-card .title-card h1>a {
-         font-size: 20px;
+         font-size: 18px;
          line-height: 25px;
      }
 
      .box-word-tour .wrap-word-tour .title-word-tour h1 {
-         font-size: 30px;
-         line-height: 35px;
+         font-size: 26px;
+         line-height: 20px;
      }
 
      .box-word-tour .wrap-word-tour .title-word-tour p {
-         font-size: 18px;
+         font-size: 14px;
      }
 
      .box-intro .wrap-intro {
@@ -982,6 +986,20 @@
      .box-recently-viewed>h1 {
          font-size: 28px;
          line-height: 25px;
+     }
+
+     .box-word-tour .wrap-word-tour .list-tour .card-word-tour .content-card .title-card .cta-tour .btn-share i>ul {
+         position: absolute;
+         bottom: -90px;
+         right: -50px;
+         width: 130px;
+         visibility: hidden;
+         opacity: 0;
+         backface-visibility: hidden;
+         transform: rotateX(-100deg);
+         transform-style: preserve-3d;
+         transform-origin: top;
+         transition: transform 0.5s cubic-bezier(0.2, 0.37, 0.6, 1.2);
      }
  }
 
