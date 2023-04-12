@@ -1,6 +1,13 @@
 
 w3.includeHTML(myCallback);
 function myCallback() {
+
+    $("#scroll-to-top").click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500)
+    })
+
     //Active menu
 
     const menuChild = document.getElementById("menu-child");
