@@ -22,7 +22,8 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    /* height: auto; */
+    height: 85px;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -61,7 +62,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    /* height: 100%; */
+    height: auto;
     padding: 0px 40px;
     border-right: 1px solid #2d2d2d;
 }
@@ -80,7 +82,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    /* height: 100%; */
+    height: auto;
 }
 
 .box-navbar .wrap-navbar .box-menu .wrap-menu .menu {
@@ -288,6 +291,8 @@ a {
 
 .box-navbar .wrap-navbar .box-menu .wrap-menu .menu>li:hover .drop-acti {
     transform: rotateX(0deg) !important;
+    height: 320px;
+    overflow-y: auto;
 }
 
 .box-navbar .wrap-navbar .box-menu .wrap-menu .menu .drop-acti>li {
@@ -1929,8 +1934,10 @@ footer {
     .box-navbar.active {
         flex-direction: column;
         background-color: #252525;
-        height: auto;
-        position: relative;
+        /* height: auto; */
+        height: 100vh;
+        position: fixed;
+        overflow-y: auto;
         transition: all 0.3s linear;
     }
 
@@ -2451,25 +2458,18 @@ footer {
         grid-template-columns: auto;
     }
 
-    .box-home .home-content .home-title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
     .box-home .home-content .home-title i {
-        font-size: 50px;
+        font-size: 60px;
     }
 
     .box-home .home-content .home-title h1 {
-        font-size: 30px;
+        font-size: 48px;
         width: 100%;
         text-align: left;
     }
 
     .box-home .home-content .home-title span {
-        font-size: 30px;
+        font-size: 48px;
     }
 
     .box-home .home-content .home-form .form {
@@ -2681,6 +2681,27 @@ footer {
         left: 25%;
         width: 80%;
         grid-template-columns: auto auto;
+    }
+
+    .box-home .home-content .home-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .box-home .home-content .home-title i {
+        font-size: 48px;
+    }
+
+    .box-home .home-content .home-title h1 {
+        font-size: 28px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .box-home .home-content .home-title span {
+        font-size: 28px;
     }
 
     .box-adventure .wrap-adventure .content-adventure .photo-adventure .photo-card .infor-card p {
