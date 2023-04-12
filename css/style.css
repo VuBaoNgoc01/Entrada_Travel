@@ -1963,6 +1963,7 @@ footer {
     .box-navbar .wrap-navbar .box-menu.active {
         display: block;
         width: 100%;
+        height: 90%;
         transition: all 0.3s linear;
     }
 
@@ -1983,25 +1984,25 @@ footer {
         flex-direction: column;
         justify-content: left;
         width: 100%;
+        margin: 0;
         transform: translateY(0%);
         transition: all 0.5s linear;
     }
 
     .box-navbar .wrap-navbar .box-menu.active .wrap-menu .menu>li {
-        border-bottom: 1px solid #000;
         border-top: 1px solid #000;
         width: 100%;
     }
 
     .box-navbar .wrap-navbar .box-menu.active .wrap-menu .menu>li>a {
-        padding: 10px;
+        padding: 20px;
         width: 100%;
     }
 
     .box-navbar .wrap-navbar .box-menu .wrap-menu .menu>li>.nav-arrow {
         display: block;
         position: absolute;
-        top: 10px;
+        top: 20px;
         right: 3%;
         transition: all 0.25s linear;
     }
@@ -2023,13 +2024,17 @@ footer {
         border: none;
         align-items: normal;
         justify-content: left;
+        padding: 0;
+        border-top: 1px solid #000;
     }
 
-    .box-navbar .wrap-navbar .box-menu.active .box-cta .cta {
-        border: none;
-        padding: 10px;
+    .box-navbar .wrap-navbar .box-menu.active .box-cta .cta:last-child {
         border-bottom: 1px solid #000;
-        border-top: 1px solid #000;
+    }
+
+    .box-navbar .wrap-navbar .box-menu.active .box-cta .cta a {
+        width: 100%;
+        padding: 20px;
     }
 
     .box-navbar .wrap-navbar .box-menu .wrap-menu .menu .dropdown {
@@ -2048,6 +2053,7 @@ footer {
     .box-navbar .wrap-navbar .box-menu .wrap-menu .menu .open .dropdown {
         display: block;
         top: 0;
+        padding: 0px 0px 10px 0px;
         height: auto;
     }
 
@@ -2746,6 +2752,7 @@ footer {
     .box-navbar .wrap-navbar .box-menu .wrap-menu .menu .dropdown .dropdown-left>li .item-right {
         left: 35%;
         width: 100%;
+        height: 93%;
         grid-template-columns: auto;
     }
 }
