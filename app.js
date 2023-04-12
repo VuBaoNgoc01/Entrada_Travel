@@ -5,7 +5,20 @@ $(document).ready(function () {
         } else {
             $('.box-navbar').removeClass("scrollMenu")
         }
+
+        if (this.scrollY > 500) {
+            $('.scroll-to-top').addClass("active")
+        } else {
+            $('.scroll-to-top').removeClass("active")
+        }
     });
+
+    $("#scroll-to-top").click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500)
+    })
+
 
     // Slider-partner
 
@@ -94,23 +107,33 @@ menuChild.addEventListener("click", () => {
 //     dropChild.classList.toggle("active");
 // });
 
-var myButton = document.getElementsByClassName(('drop-child')[0]);
+// var myButton = document.getElementsByClassName(('drop-child')[0]);
 
-// If you care about all of the elements, you'll need to loop through the elements:
-var myButtons = document.getElementsByClassName('drop-child');
+// // If you care about all of the elements, you'll need to loop through the elements:
+// var myButtons = document.getElementsByClassName('drop-child');
 
-for (var i = 0; i < myButtons.length; ++i) {
-    myButtons[i].addEventListener('click', function () {
-        // Using an if statement to check the class
-        if (this.classList.contains('open')) {
-            // The box that we clicked has a class of bad so let's remove it and add the good class
-            this.classList.remove('open');
-        } else {
-            // The user obviously can't follow instructions so let's alert them of what is supposed to happen next
-            this.classList.add('open');
-        }
-    });
-}
+// for (var i = 0; i < myButtons.length; ++i) {
+//     myButtons[i].addEventListener('click', function () {
+//         // Using an if statement to check the class
+//         if (this.classList.contains('open')) {
+//             // The box that we clicked has a class of bad so let's remove it and add the good class
+//             this.classList.remove('open');
+//         } else {
+//             // The user obviously can't follow instructions so let's alert them of what is supposed to happen next
+//             this.classList.add('open');
+//         }
+//     });
+// }
+
+const menuShow = document.querySelectorAll.bind(document)('.drop-child')
+
+menuShow.forEach((ms, index) => {
+    ms.onclick = function () {
+        document.querySelector.bind(document)('.drop-child.open').classList.remove('open');
+
+        this.classList.add('open');
+    }
+});
 
 
 //hover menu
