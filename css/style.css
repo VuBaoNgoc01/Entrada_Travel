@@ -146,7 +146,7 @@ a {
 
 .box-navbar .wrap-navbar .box-menu .wrap-menu .menu .dropdown {
     position: absolute;
-    top: 98%;
+    top: 90%;
     left: 0;
     width: 150px;
     padding: 20px 0px;
@@ -282,7 +282,7 @@ a {
 
 .box-navbar .wrap-navbar .menu .drop-acti {
     position: absolute;
-    top: 98%;
+    top: 90%;
     left: -50vw !important;
     width: 80vw !important;
     display: grid;
@@ -291,8 +291,7 @@ a {
 
 .box-navbar .wrap-navbar .box-menu .wrap-menu .menu>li:hover .drop-acti {
     transform: rotateX(0deg) !important;
-    height: 320px;
-    overflow-y: auto;
+    height: auto;
 }
 
 .box-navbar .wrap-navbar .box-menu .wrap-menu .menu .drop-acti>li {
@@ -1996,6 +1995,7 @@ footer {
 
     .box-navbar .wrap-navbar .box-menu.active .wrap-menu .menu>li>a {
         padding: 10px;
+        width: 100%;
     }
 
     .box-navbar .wrap-navbar .box-menu .wrap-menu .menu>li>.nav-arrow {
@@ -2009,6 +2009,10 @@ footer {
     .box-navbar .wrap-navbar .box-menu.active .wrap-menu .menu .open>.nav-arrow {
         transform: rotate(-270deg);
         transition: all 0.25s linear;
+    }
+
+    .box-navbar .wrap-navbar .box-menu .wrap-menu .menu>li:hover .drop-acti {
+        height: auto;
     }
 
     .box-navbar .wrap-navbar .box-menu.active .box-cta {
