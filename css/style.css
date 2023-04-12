@@ -1011,6 +1011,10 @@ section {
     transition: all 0.3s linear;
 }
 
+.box-seller .wrap-seller .content-seller .card-seller .infor-seller {
+    padding: 0px 10px;
+}
+
 .box-tour .wrap-tour .content-tour .card-tour .photo-tour .time-tour {
     z-index: 1;
     position: absolute;
