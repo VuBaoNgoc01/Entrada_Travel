@@ -151,7 +151,7 @@
 .box-contact .wrap-contact .how-contact .form-contact .input textarea {
     border: none;
     background-color: transparent;
-    border-bottom: 1px solid #dedede;
+    border-bottom: 1px solid #a9a9a9;
     padding: 10px 5px 5px 5px;
     width: 60%;
     outline: none;
@@ -255,5 +255,32 @@
         font-size: 20px;
         line-height: 20px;
         margin: 0px 0px 10px 0px;
+    }
+
+    .box-contact .wrap-contact .how-contact .form-contact .input {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-contact .wrap-contact .how-contact .form-contact .input label {
+        width: 100%;
+        font-size: 14px;
+        margin: 0px 0px 5px;
+        text-align: left;
+    }
+
+    .box-contact .wrap-contact .how-contact .form-contact .input input,
+    .box-contact .wrap-contact .how-contact .form-contact .input textarea {
+        padding: 5px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .box-contact .wrap-contact .how-contact .form-contact button {
+        width: 100%;
+        margin: 0;
+        font-size: 16px;
     }
 }
