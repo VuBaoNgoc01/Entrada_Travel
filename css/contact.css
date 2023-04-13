@@ -161,27 +161,31 @@
 .box-contact .wrap-contact .how-contact .form-contact button {
     padding: 10px;
     border: 1px solid #dedede;
-    background: transparent;
+    background: #5d4a0e;
     width: 60%;
     margin: 0px 0px 0px 125px;
-    color: #474d4b;
+    color: #fff;
     font-size: 18px;
     letter-spacing: 1px;
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 0.25s linear;
+    transition: all 0.3s linear;
+}
+
+.box-contact .wrap-contact .how-contact .form-contact button::before {
+    background-color: #b0a377;
 }
 
 .box-contact .wrap-contact .how-contact .form-contact button:hover {
-    color: #ADA075;
-    transition: all 0.25s linear;
-    background-color: #fff;
+    transition: all 0.3s linear;
+    color: #1f2933;
+    background-color: #b0a377;
 }
 
 .box-contact .wrap-contact .how-contact .add-contact {
     width: 50%;
-    height: 680px;
+    height: 660px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -257,6 +261,10 @@
         margin: 0px 0px 10px 0px;
     }
 
+    .box-contact .wrap-contact .how-contact .form-contact {
+        padding: 30px 10px;
+    }
+
     .box-contact .wrap-contact .how-contact .form-contact .input {
         width: 100%;
         display: flex;
@@ -282,5 +290,9 @@
         width: 100%;
         margin: 0;
         font-size: 16px;
+    }
+
+    .box-contact .wrap-contact .how-contact .add-contact {
+        height: 375px;
     }
 }

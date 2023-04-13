@@ -524,4 +524,29 @@
     .box-blog .wrap-blog .content-blog .card-blog .info-card-blog {
         width: 100%;
     }
+
+    .box-blog .wrap-blog .content-blog .card-blog .info-card-blog .info-title h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .box-blog .wrap-blog .content-blog .card-blog .info-card-blog .info-title span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 550px) {
+    .box-blog .wrap-blog .content-blog .card-blog .info-card-blog .info-title h3 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .box-blog .wrap-blog .content-blog .card-blog .info-card-blog .info-title span {
+        font-size: 14px;
+    }
+
+    .box-blog .wrap-blog .select-blog .nav-select-blog .nav-blog>li .nav-img-blog>li>a {
+        padding: 0;
+        height: 100px;
+    }
 }
